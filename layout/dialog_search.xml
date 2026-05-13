@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#B3C3DD">
+
+    <!-- Title section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#236893"
+        android:padding="10dp"
+        android:elevation="8dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#B3C3DD"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+
+    <!-- The Search Section-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Book Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#236893"
+        android:paddingBottom="5dp"/>
+
+    <EditText
+        android:id="@+id/etSearchBook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Book Name"
+        android:background="#FFFFFF"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnSearchNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:textColor="#236893"
+        android:backgroundTint="#EAD49D"
+        android:layout_marginTop="15dp"/>
+
+    <!-- A great white Shark for the African theme (looks like a dolpin though)-->
+    <ImageView
+        android:id="@+id/imgPreview"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/shark2"
+        android:contentDescription="Image of a shark"/>
+
+    <!-- The filter section using spinners -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filters"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#236893"
+        android:paddingTop="25dp"
+        android:paddingBottom="15dp"/>
+
+    <!--    School Spinner-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="School Filter"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#236893"
+        android:paddingBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerSchool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#236893"
+        android:popupBackground="#236893"/>
+
+    <!-- Module Spinner -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Module Filter"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#236893"
+        android:paddingTop="15dp"
+        android:paddingBottom="5dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerModule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#236893"
+        android:popupBackground="#236893"/>
+
+    <!-- Filter button -->
+    <Button
+        android:id="@+id/btnFilterNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Filters"
+        android:textColor="#236893"
+        android:backgroundTint="#EAD49D"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

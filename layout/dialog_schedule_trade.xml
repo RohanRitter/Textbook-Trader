@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:background="#B3C3DD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#B3C3DD">
+
+        <!-- Title of the dialog -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Schedule Trade"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#236893"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <!-- Description of what needs to be done-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a date and time to meet and complete the textbook trade."
+            android:textColor="#236893"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <!-- The date picker -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#236893"
+            android:paddingBottom="10dp"/>
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:padding="10dp"/>
+
+        <!-- The Time picker -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#236893"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:timePickerMode="spinner"/>
+
+        <!-- Disclamer protecting all parties -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please ensure both parties agree on the selected trade time and location."
+            android:textColor="#236893"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"/>
+
+        <!-- The Confirm button to schedule it -->
+        <Button
+            android:id="@+id/btnConfirmTrade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Trade"
+            android:textColor="#236893"
+            android:backgroundTint="#EAD49D"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

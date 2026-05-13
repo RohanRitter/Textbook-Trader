@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- The light blue on dark blue header of the page -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#236893"
+        android:padding="10dp"
+        android:elevation="8dp">
+
+        <!-- The Page name: Help-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#B3C3DD"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"/>
+    </LinearLayout>
+
+
+    <!-- The page body is in a scrollView to ensure the users can see all -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#B3C3DD">
+
+        <!--  The Contact us section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#236893"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"/>
+
+            <!-- Insert Email here et stands for Edit Text-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textStyle="bold"
+                android:textColor="#236893"
+                android:textSize="18sp"
+                android:paddingBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email"
+                android:background="#FFFFFF"
+                android:layout_marginBottom="15dp"/>
+
+            <!-- Put message/body here for the client to send something -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body:"
+                android:textStyle="bold"
+                android:textColor="#236893"
+                android:textSize="18sp"
+                android:paddingBottom="5dp"/>
+
+            <!-- Little Descliimer to cover Textbook Traders if they dont respond fast enough -->
+            <EditText
+                android:id="@+id/etBody"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="15dp"
+                android:background="#FFFFFF"
+                android:gravity="top"
+                android:hint="Type your message here..."
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Disclaimer: Please allow 24-48 hours for responses from the Textbook Trader support team."
+                android:textColor="#236893"
+                android:textSize="14sp"
+                android:paddingBottom="15dp"/>
+
+            <!-- Send Button-->
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:textColor="#236893"
+                android:backgroundTint="#EAD49D"
+                android:layout_marginBottom="30dp"/>
+
+            <!-- The FAQ section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frequently Asked Questions"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#236893"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"/>
+
+            <!-- FAQ Question 1 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do I add a book?"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#236893"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigate to the Books page and click the Add Book button to upload your textbook details."
+                android:textColor="#236893"
+                android:paddingBottom="15dp"/>
+
+            <!-- FAQ Question 2 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How do inquiries work?"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#236893"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Click on a listed book to add it to your inquiry list. From there you can schedule a trade date and time."
+                android:textColor="#236893"
+                android:paddingBottom="15dp"/>
+
+            <!-- FAQ Question 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Can I upload book images?"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#236893"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes, when adding a book you can upload an image to help buyers identify the textbook."
+                android:textColor="#236893"
+                android:paddingBottom="15dp"/>
+
+            <!-- FAQ Question 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What schools and modules can I search for?"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#236893"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You can filter textbooks by school faculty and module code using the search tools on the Books page."
+                android:textColor="#236893"
+                android:paddingBottom="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- ANd Lastly our Primary Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#236893"
+        android:padding="10dp"
+        android:elevation="8dp">
+
+        <!-- Here lies the buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:backgroundTint="#B3C3DD"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/btnBooks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Books"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#B3C3DD"
+                android:textColor="#000000"/>
+
+            <Button
+                android:id="@+id/btnHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#B3C3DD"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <!-- Here lies the reading shark image-->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/libary_logo"
+            android:contentDescription="Company Logo"/>
+
+    </LinearLayout>
+
+</LinearLayout>

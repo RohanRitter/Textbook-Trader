@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B3C3DD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Nav all navbar tops will have this setup (light blue on top of light blue. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#236893"
+            android:padding="15dp"
+            android:elevation="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="#B3C3DD"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <!-- The Body text and place to add personal details of the user-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Description -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create your Textbook Trader account to start trades with other students."
+                android:textColor="#236893"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:paddingBottom="25dp"/>
+
+            <!-- Name row  the et is short for EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textStyle="bold"
+                    android:textColor="#236893"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Name"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- StudentNumber row  the et is short for EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Student Number"
+                    android:textStyle="bold"
+                    android:textColor="#236893"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etStudentNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Student Number"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Email row  the et is short for EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textStyle="bold"
+                    android:textColor="#236893"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Email"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Password row  the et is short for EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textStyle="bold"
+                    android:textColor="#236893"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- ConfirmPassword row the et is short for EditText-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="25dp">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password"
+                    android:textStyle="bold"
+                    android:textColor="#236893"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/etConfirmPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:background="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- Button Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <!-- The Home button cant get to fix this buttn to look like Register buttton-->
+                <!--Its a Image Button-->
+                <ImageButton
+                    android:id="@+id/btnHome"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/home"
+                    android:backgroundTint="#EAD49D"
+                    android:scaleType="fitCenter"
+                    android:padding="10dp"
+                    android:contentDescription="Home Button"/>
+
+                <!-- The Register Button to finish the registration -->
+                <Button
+                    android:id="@+id/btnCompleteRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:text="Register"
+                    android:textColor="#236893"
+                    android:backgroundTint="#EAD49D"/>
+
+            </LinearLayout>
+
+            <!-- The Need Help button goes to Help pages -->
+            <TextView
+                android:id="@+id/txtNeedHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Need Help?"
+                android:textStyle="bold"
+                android:textColor="#236893"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:paddingTop="20dp"/>
+
+            <!-- Great White Shark Fin image to bring the Africaness to this page-->
+            <ImageView
+                android:id="@+id/sharkfin"
+                android:layout_width="358dp"
+                android:layout_height="184dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:contentDescription="Company Logo"
+                android:src="@drawable/shark3" />
+
+            <!-- Company Logo-->
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/libary_logo"
+                android:contentDescription="Company Logo"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

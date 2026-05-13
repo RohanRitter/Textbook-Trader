@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#B3C3DD">
+
+    <!-- Here lies the company logo will use this on every page-->
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/libary_logo"
+        android:contentDescription="Company Logo"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Textbook Trader (company name ) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Textbook Trader"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#236893"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Ocean Wave patter for AFRICA!! -->
+    <ImageView
+        android:id="@+id/imgzigziag"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="Wave Pattern"
+        android:scaleType="centerCrop"
+        android:src="@drawable/zigdb" />
+
+    <!-- A made up discription textView -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Textbook Trader for students by students. Buy and sell your study books quickly and efficiently."
+        android:textColor="#236893"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:paddingBottom="15dp"/>
+
+    <!-- The main navigation button lets focus here (probably the first interaction of every user -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:textSize="18sp"
+        android:textColor="#236893"
+        android:backgroundTint="#EAD49D"/>
+
+    <!-- Help button for the lost souls -->
+    <TextView
+        android:id="@+id/txtNeedHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need Help?"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#236893"
+        android:paddingTop="20dp"/>
+
+</LinearLayout>

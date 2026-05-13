@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B3C3DD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:background="#B3C3DD">
+
+        <!-- Descriptive Title for students-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Book Details"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#236893"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"/>
+
+        <!-- Row for Book Name insert -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Book Name"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etBookName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Book Name"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Row for Book ISBN insert -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="ISBN"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etISBN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter ISBN"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Row for Book Author insert -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Author"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Row for what school the book is related to -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="School"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etSchool"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter School"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Row for module the book is used in -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Module"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etModule"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Module"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Row for Book Condition -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Condition"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etCondition"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"
+                android:hint="Enter Condition" />
+        </LinearLayout>
+
+        <!-- Row for Book Desired Price -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="#236893"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter Price"
+                android:background="#FFFFFF"
+                android:backgroundTint="#FFFFFF"/>
+        </LinearLayout>
+
+        <!-- Button to upload a book image-->
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload Image"
+            android:textColor="#236893"
+            android:backgroundTint="#EAD49D"/>
+
+        <!-- Save Button to add the book to the list -->
+        <Button
+            android:id="@+id/btnSaveBook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Book"
+            android:textColor="#236893"
+            android:backgroundTint="#EAD49D"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Shark image for African theme -->
+        <ImageView
+            android:id="@+id/imgSmileShark"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/shark1"
+            android:contentDescription="Book place holder"/>
+
+    </LinearLayout>
+
+</ScrollView>
